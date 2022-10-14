@@ -8,7 +8,7 @@ local betterisfile = function(file)
 end
 local function GetURL(scripturl)
 	if shared.VapeDeveloper then
-		if not betterisfile("vape/"..scripturl) then
+		if not betterisfile("vapenotape/"..scripturl) then
 			error("File not found : vape/"..scripturl)
 		end
 		return readfile("vape/"..scripturl)
